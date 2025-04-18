@@ -17,7 +17,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: ai-service
-          image: saikarthick07/bestbuy-ai-service:latest
+          image: akapharande/bestbuy-ai-service:latest
           ports:
             - containerPort: 5001
           env:
