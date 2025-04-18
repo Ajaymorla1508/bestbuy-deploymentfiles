@@ -72,12 +72,11 @@ You will need Azure CLI. If you don't have it: [**Install Azure CLI**](https://l
 ---
 ### Step 1: Clone the Best Buy Store Repository
 
-To begin, clone the [**Best Buy Store Repository**]() repository, which contains all necessary deployment files.
+To begin, clone the [**Best Buy Store Repository**](https://github.com/Saikarthick07/bestbuy-deploymentfiles/tree/main) repository, which contains all necessary deployment files.
 
  **Review the Deployment Files**:
    - Navigate to the `Deployment Files` folder
-   - This folder contains YAML files for deploying all necessary Kubernetes resources, including services, deployments, StatefulSets, ConfigMaps, and Secrets.
-   - There's a dedicated deployment file for each microservice if you wish to deploy them individually. Or you could use `kustomize.yaml` to deploy all the services at once. 
+   - This folder contains all in one YAML files for deploying all necessary Kubernetes resources, including microservices, deployments and Secrets.
 
 ---
 ### Step 2: Set Up the AKS Cluster
