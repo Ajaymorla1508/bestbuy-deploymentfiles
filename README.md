@@ -19,7 +19,7 @@ The application has the following services:
 
 
 
-![Logical Application Architecture Diagram](assets/Algonquin%20Pet%20Store%20On%20Steroids.png)
+![Logical Application Architecture Diagram](https://github.com/Saikarthick07/bestbuy-deploymentfiles/blob/main/assets/bestbuy-system-architecture.png)
 
 ## Run the app on Azure Kubernetes Service (AKS)
 
