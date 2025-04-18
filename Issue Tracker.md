@@ -2,6 +2,7 @@
 
 ## 1. Pods status with "CrashLoopBackOff" for most of the microservices.
 
+![CrashLoopBackOff Issue](https://github.com/Saikarthick07/bestbuy-deploymentfiles/blob/main/assets/bestbuy-system-architecture.png)
 The following pods are in a CrashLoopBackOff status:
 
 - ai-service-5c4b957694-qd29c
