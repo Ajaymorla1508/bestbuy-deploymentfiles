@@ -25,12 +25,15 @@ Check Pod Logs:
 
 - You can view the logs of the crashing pods to gather more details on the error causing them to crash.
 - Use the following command to view the logs:
-  "kubectl logs <pod-name> -n default"
-
+  
+```bash
+     kubectl logs <pod-name> -n default
+```
+```bash
 (base) saikarthick@SAIs-MacBook-Air DeploymentFiles % kubectl logs pod/makeline-service-698dfdb5c-drjlb -n default
 
 exec ./main: exec format error
-
+```
 ## Possible Causes and Solutions:
 
 - Incorrect Architecture (ARM vs. x86):
@@ -41,20 +44,29 @@ If you built the Docker image on a different architecture (e.g., ARM on a Mac) a
 ## Steps to Enable Multi-Platform Builds with docker-container Driver:
 
 - Create a new builder using docker-container: Run the following command to create a new builder with the docker-container driver:
-  "docker buildx create --use --driver docker-container"
-  
+```bash
+  docker buildx create --use --driver docker-container
+  ```
 - Verify the Builder: After creating the new builder, run this command to verify the active builder and its platforms:
-  "docker buildx ls"
+```bash
+  docker buildx ls
+```
   You should see the docker-container driver listed as the active builder.
 
 - Run the Multi-Platform Build Command: Now that you've switched to the docker-container driver, run the multi-platform build command again:
-  "docker buildx build --platform linux/amd64,linux/arm64 -t <Docker-Hub-Username>/bestbuy-makeline-service:latest ."
+ ```bash 
+  docker buildx build --platform linux/amd64,linux/arm64 -t <Docker-Hub-Username>/bestbuy-product-service:latest --push .
+```
   This should allow you to successfully build the Docker image for multiple platforms.
 
 - Ensure you switch the directory to the affected microservices, and try to re-build the docker images using the Multi-Platform build command.
 
 
 - Once created with the multi-platform docker build, pull the docker image into your local repository.
+  
+```bash
+docker pull <Docker-Hub-Username>/bestbuy-product-service:latest
+```
 
 
 
