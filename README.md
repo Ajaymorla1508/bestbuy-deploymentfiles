@@ -8,7 +8,7 @@ Welcome to the BestBuy cloud native application application.
 
 This application is inspired by Azure Kubernetes Service (AKS) quickstart demo [Azure Kubernetes Service (AKS) Docs](https://learn.microsoft.com/en-us/azure/aks/).
 
-Video Demo : https://youtu.be/JD_IZ9ovr-Y 
+Project Demo Video : https://youtu.be/JD_IZ9ovr-Y 
 
 
 ## Architecture
