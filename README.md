@@ -1,4 +1,4 @@
-## Contributores:
+## Contributors:
 
 - SAI KARTHICK KALIDOSS (041185264)
 - AJAY MORLA (041171508)
